@@ -21,6 +21,7 @@ body {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   transform: rotate(20deg);
+  animation: stock 1s ease;
 
 }
 
@@ -28,14 +29,14 @@ body {
   top: 140px;
   left: 215px;
   position: absolute;
-  animation: kugel-weiss 2s ease;
+  animation: kugel-weiss 2s 0.8s ease;
 }
 
 .kugel-gelb {
   top: 100px;
   left: 250px;
   position: absolute;
-  animation: kugel-gelb 3s 1s forwards;
+  animation: kugel-gelb 3s 2s forwards;
 }
 
 @keyframes kugel-weiss {
@@ -74,7 +75,7 @@ body {
   bottom: -10px;
 }
   50% {
-    left: 200px;
+    left: 180px;
     bottom: -50px;
   }
 
