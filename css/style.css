@@ -1,9 +1,86 @@
 body {
   font-family: arial;
+
 }
 
 .rectangle {
   width: 449px;
   height: 257px;
   background-color: #f13ac4;
+  position: relative;
+  overflow: hidden;
+}
+
+.stock {
+  height: 110px;
+  width: 7px;
+  background-color: brown;
+  position: absolute;
+  left: 200px;
+  bottom: -10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transform: rotate(20deg);
+
+}
+
+.kugel-weiss {
+  top: 140px;
+  left: 215px;
+  position: absolute;
+  animation: kugel-weiss 2s ease;
+}
+
+.kugel-gelb {
+  top: 100px;
+  left: 250px;
+  position: absolute;
+  animation: kugel-gelb 3s 1s forwards;
+}
+
+@keyframes kugel-weiss {
+  0% {
+    top: 140px;
+    left:215px;
+  }
+
+  100% {
+    top: 110px;
+    left: 230px;
+  }
+}
+
+@keyframes kugel-gelb {
+  0% {
+    top: 100px;
+    left: 250px;
+    opacity: 1;
+  }
+
+  99% {
+    opacity: 1;
+  }
+
+  100% {
+    top: 5px;
+    left: 420px;
+    opacity: 0;
+  }
+}
+
+@keyframes stock {
+0% {
+  left: 200px;
+  bottom: -10px;
+}
+  50% {
+    left: 200px;
+    bottom: -50px;
+  }
+
+  100% {
+    left: 200px;
+    bottom: -10px;
+  }
+
 }
