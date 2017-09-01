@@ -1,0 +1,9 @@
+body {
+  font-family: arial;
+}
+
+.rectangle {
+  width: 449px;
+  height: 257px;
+  background-color: #f13ac4;
+}
