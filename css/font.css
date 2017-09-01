@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.fireball {
+  position: absolute;
+  animation: fireball 2s;
+}
+
+.bowl {
+  position: absolute;
+  animation: bowl 2s 1s forwards;
+  opacity: 0;
+}
+
+.font1 {
+  position: absolute;
+  animation: font 2s 2s forwards;
+  opacity: 0;
+
+}
+.font2 {
+  position: absolute;
+  animation: font 2s 2.5s forwards;
+  opacity: 0;
+}
+.font3 {
+  position: absolute;
+  animation: font 2s 3s forwards;
+  opacity: 0;
+}
+.font4 {
+  position: absolute;
+  animation: font 2s 3.5s forwards;
+  opacity: 0;
+}
+
+
+@keyframes bowl {
+  0% {
+    left: 200px;
+    opacity: 0;
+  }
+100% {
+    left: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes fireball {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes font {
+  0% {
+    left: 200px
+  }
+100% {
+    left: 0px;
+    opacity: 1;
+  }
+}
