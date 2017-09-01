@@ -5,34 +5,35 @@ body {
 
 .fireball {
   position: absolute;
-  animation: fireball 2s;
+  animation: fireball 2s 4s forwards;
+  opacity: 0;
 }
 
 .bowl {
   position: absolute;
-  animation: bowl 2s 1s forwards;
+  animation: bowl 2s 5s forwards;
   opacity: 0;
 }
 
 .font1 {
   position: absolute;
-  animation: font 2s 2s forwards;
+  animation: font 2s 5.5s forwards;
   opacity: 0;
 
 }
 .font2 {
   position: absolute;
-  animation: font 2s 2.5s forwards;
+  animation: font 2s 6s forwards;
   opacity: 0;
 }
 .font3 {
   position: absolute;
-  animation: font 2s 3s forwards;
+  animation: font 2s 6.5s forwards;
   opacity: 0;
 }
 .font4 {
   position: absolute;
-  animation: font 2s 3.5s forwards;
+  animation: font 2s 7s forwards;
   opacity: 0;
 }
 
@@ -55,6 +56,7 @@ body {
   }
 100% {
     transform: scale(1);
+    opacity: 1;
   }
 }
 

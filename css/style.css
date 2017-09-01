@@ -1,6 +1,8 @@
 body {
   font-family: arial;
-
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .rectangle {
@@ -9,6 +11,7 @@ body {
   background-color: #f13ac4;
   position: relative;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .stock {
@@ -29,7 +32,7 @@ body {
   top: 140px;
   left: 215px;
   position: absolute;
-  animation: kugel-weiss 2s 0.8s ease;
+  animation: kugel-weiss 2s 0.8s forwards;
 }
 
 .kugel-gelb {
